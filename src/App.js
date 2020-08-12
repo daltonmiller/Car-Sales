@@ -1,23 +1,30 @@
 import React from 'react';
-
-import Header from './components/Header';
-import AddedFeatures from './components/AddedFeatures';
-import AdditionalFeatures from './components/AdditionalFeatures';
-import Total from './components/Total';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom'
+import lambo from './pages/lambo'
+import Mustang from './pages/mustang'
+import home from './pages/home'
 
 const App = () => {
 
 
   return (
     <div className="boxes">
-      <div className="box">
-        <Header  />
-        <AddedFeatures />
-      </div>
-      <div className="box">
-        <AdditionalFeatures  />
-        <Total  />
-      </div>
+       <Link to='/lambo'>lambo</Link>
+            <Link to='/Mustang'>mustang</Link>
+
+            <Switch>
+                <Route exact path="/lambo">
+                    <lambo/>
+                </Route>
+                <Route exact path="/Mustang">
+                    <Mustang/>
+                </Route>
+            </Switch>
     </div>
   );
 };

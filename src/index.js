@@ -5,6 +5,7 @@ import App from './App';
 import { createStore } from 'redux'
 import { rootReducer } from './reducers/Reducer'
 import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
 
 import 'bulma/css/bulma.css';
 import './styles.scss';
@@ -16,6 +17,8 @@ console.log(store.getState())
 const rootElement = document.getElementById('root');
 ReactDOM.render(
 <Provider store={store}>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
 </Provider>,
  rootElement);

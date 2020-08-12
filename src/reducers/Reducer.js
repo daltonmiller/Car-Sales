@@ -3,13 +3,23 @@ import { ADD_FEATURE, REMOVE_FEATURE } from "../actions/index";
 export const initialState = {
   additionalPrice: 0,
 
-  car: {
+  cars: {
+      
     price: 26395,
     name: "2019 Ford Mustang",
     image:
       "https://cdn.motor1.com/images/mgl/0AN2V/s1/2019-ford-mustang-bullitt.jpg",
     features: []
   },
+//   {
+//   price: 150000,
+//   name: "2019 Lamborgini",
+//   image:
+//     "https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+//   features: []
+//   }
+//combine reducers and then change them in components
+  
 
   additionalFeatures: [
     { id: 1, name: "V-6 engine", price: 1500 },

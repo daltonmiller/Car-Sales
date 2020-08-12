@@ -1,10 +1,11 @@
 export const ADD_FEATURE = "ADD_FEATURE"
 export const REMOVE_FEATURE = "REMOVE_FEATURE"
 
-export const addFeature = feature => {
+export const addFeature = (feature, carName) => {
     return {
         type: ADD_FEATURE,
-        payload: feature
+        payload: feature,
+        name: carName
     }
 }
 export const removeFeature = feature => {
