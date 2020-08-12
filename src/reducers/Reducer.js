@@ -3,7 +3,7 @@ import { ADD_FEATURE, REMOVE_FEATURE } from "../actions/index";
 export const initialState = {
   additionalPrice: 0,
 
-  cars: {
+  car: {
       
     price: 26395,
     name: "2019 Ford Mustang",
